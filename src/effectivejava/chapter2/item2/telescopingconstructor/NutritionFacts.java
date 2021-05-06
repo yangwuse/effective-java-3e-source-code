@@ -43,3 +43,32 @@ public class NutritionFacts {
     }
     
 }
+
+// my test code
+class Test {
+    private final int a; // required
+    private final int b; // required
+    private final int c; // optinal
+    private final int d; // optinal
+    private final int e; // optinal
+
+    public Test(int a, int b, int c, int d, int e) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
+        this.e = e;
+    }
+
+    public Test(int a, int b, int c, int d) {
+        this(a, b, c, d, 0);
+    }
+
+    public Test(int a, int b, int c) {
+        this(a, b, c, 0);
+    }
+
+    public Test(int a, int b) {
+        this(a, b, 0);
+    }
+}

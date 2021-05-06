@@ -11,6 +11,7 @@ public class StopThread {
             int i = 0;
             while (!stopRequested)
                 i++;
+
         });
         backgroundThread.start();
 
