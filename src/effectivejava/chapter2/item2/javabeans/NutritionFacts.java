@@ -28,3 +28,26 @@ public class NutritionFacts {
         cocaCola.setCarbohydrate(27);
     }
 }
+
+// my test code
+class Test {
+    private int a = 1;
+    private int b = 2;
+    private int c;
+    private int d;
+    private int e;
+
+    public Test() {}
+    // Setters
+    public void setA(int a) { this.a = a; }
+    public void setB(int b) { this.b = b; }
+    public void setC(int c) { this.c = c; }
+    public void setD(int d) { this.d = d; }
+    public void setE(int e) { this.e = e; }
+
+    public static void main(String[] args) {
+        Test test = new Test();
+        test.setA(2);
+        test.setB(3);
+    }
+}
