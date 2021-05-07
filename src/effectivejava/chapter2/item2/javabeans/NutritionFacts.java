@@ -1,5 +1,7 @@
 package effectivejava.chapter2.item2.javabeans;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 // JavaBeans Pattern - allows inconsistency, mandates mutability  (pages 11-12)
 public class NutritionFacts {
     // Parameters initialized to default values (if any)
@@ -46,8 +48,5 @@ class Test {
     public void setE(int e) { this.e = e; }
 
     public static void main(String[] args) {
-        Test test = new Test();
-        test.setA(2);
-        test.setB(3);
     }
 }
