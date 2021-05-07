@@ -16,3 +16,17 @@ public class Elvis {
         elvis.leaveTheBuilding();
     }
 }
+
+class Test {
+    public static Test INSTANCE = new Test();
+    private Test() {}
+    public static Test getInstance() { return INSTANCE; }
+    public void bar() {
+        System.out.println("Hello Singleton");
+    }
+
+    public static void main(String[] args) {
+        Test test = Test.getInstance();
+        test.bar();
+    }
+}

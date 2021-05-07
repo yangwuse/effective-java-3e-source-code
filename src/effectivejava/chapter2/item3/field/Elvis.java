@@ -16,3 +16,17 @@ public class Elvis {
         elvis.leaveTheBuilding();
     }
 }
+
+// My test code
+class Test {
+    public static Test INSTATNCE = new Test();
+    private Test() {}
+    public void bar() {
+        System.out.println("Singleton");
+    }
+
+    public static void main(String[] args) {
+        Test test = Test.INSTATNCE;
+        test.bar();
+    }
+}

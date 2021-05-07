@@ -27,6 +27,6 @@ public class NyPizza extends Pizza {
     }
 
     @Override public String toString() {
-        return "New York Pizza with " + toppings;
+        return "New York Pizza with " + toppings + " size " + size;
     }
 }
