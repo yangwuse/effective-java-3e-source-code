@@ -18,7 +18,8 @@ public class Elvis {
 }
 
 class Test {
-    public static Test INSTANCE = new Test();
+    // private
+    private static Test INSTANCE = new Test();
     private Test() {}
     public static Test getInstance() { return INSTANCE; }
     public void bar() {

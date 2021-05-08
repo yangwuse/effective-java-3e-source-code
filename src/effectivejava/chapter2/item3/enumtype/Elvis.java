@@ -14,3 +14,12 @@ public enum Elvis {
         elvis.leaveTheBuilding();
     }
 }
+
+// Test
+enum Singleton {
+    INSTANCE;
+
+    public static void main(String[] args) {
+        Singleton s = Singleton.INSTANCE;
+    }
+}

@@ -19,6 +19,7 @@ public class Elvis {
 
 // My test code
 class Test {
+    // public
     public static Test INSTATNCE = new Test();
     private Test() {}
     public void bar() {
