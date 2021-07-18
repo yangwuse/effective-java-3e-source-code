@@ -27,7 +27,7 @@ public class RomanNumerals {
         for (int i = 0; i < numSets; i++) {
             long start = System.nanoTime();
             for (int j = 0; j < numReps; j++) {
-                b ^= isRomanNumeralFast("MCMLXXVI");  // Change Slow to Fast to see performance difference
+                b ^= isRomanNumeralSlow("MCMLXXVI");  // Change Slow to Fast to see performance difference
             }
             long end = System.nanoTime();
             System.out.println(((end - start) / (1_000. * numReps)) + " μs.");
