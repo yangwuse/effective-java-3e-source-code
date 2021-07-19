@@ -47,5 +47,6 @@ public class Stack {
 
         while (true)
             System.err.println(stack.pop());
+
     }
 }
