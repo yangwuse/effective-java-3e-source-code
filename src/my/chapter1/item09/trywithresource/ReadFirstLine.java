@@ -1,7 +1,5 @@
 package my.chapter1.item09.trywithresource;
-
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
