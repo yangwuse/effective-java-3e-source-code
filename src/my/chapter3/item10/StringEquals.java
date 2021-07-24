@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-// 违法 equals 对称性: 只修改一个类的 equals 导致 eqauls 不对称
+// 违法 equals 对称性: 只修改一个类的 equals 导致 eqauls 信息不对称
 public class StringEquals {
 	private final String s;
 
