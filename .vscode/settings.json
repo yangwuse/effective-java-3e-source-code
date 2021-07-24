@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "src/my/chapter3/item10/nulltest",
+        "src/my/chapter3/item10/floatdouble",
+        "src/my/chapter3/item11"
+    ]
+}
