@@ -1,6 +1,5 @@
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 
 // hashCode 的三种写法
 public final class PhoneNumber {
