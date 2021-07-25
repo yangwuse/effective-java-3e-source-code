@@ -1,8 +1,5 @@
 package my.chapter3.item10.collections;
-
-import java.util.HashSet;
 import java.util.Set;
-import java.util.TreeSet;
 
 // Set 集合的不同实现类之间可以相互比较 
 // 实际上比较的是集合中的元素是否相等
