@@ -2,5 +2,5 @@
     "java.project.sourcePaths": [
         "src"
     ],
-    "java.dependency.syncWithFolderExplorer": true
+    "java.dependency.syncWithFolderExplorer": true,
 }
