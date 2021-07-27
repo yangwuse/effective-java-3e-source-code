@@ -9,7 +9,7 @@ public class Raw {
         String s = strings.get(0); // Has compiler-generated cast
     }
 
-    private static void unsafeAdd(List list, Object o) {
+    private static void unsafeAdd(List<Object> list, Object o) {
         list.add(o);
     }
 }
