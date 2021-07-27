@@ -2,7 +2,7 @@ package effectivejava.chapter4.item23.taggedclass;
 
 // Tagged class - vastly inferior to a class hierarchy! (Page 109)
 class Figure {
-    enum Shape { RECTANGLE, CIRCLE };
+    enum Shape { RECTANGLE, CIRCLE }
 
     // Tag field - the shape of this figure
     final Shape shape;
