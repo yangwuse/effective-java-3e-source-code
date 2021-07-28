@@ -7,6 +7,7 @@ import java.util.Set;
 // 合并 Set<Integer> 和 Set<Double> 集合
 public class Union {
     // 不返回通配符类型
+    // s1 和 s2 作为生产者 使用 <? extends E> 类型
     public static <E> Set<E> union(Set<? extends E> s1, Set<? extends E> s2) {
         Set<E> res = new HashSet<>(s1);
         res.addAll(s2);

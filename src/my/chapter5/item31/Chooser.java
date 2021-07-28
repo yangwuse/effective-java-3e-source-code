@@ -21,7 +21,7 @@ public class Chooser<T> {
     }
     
     public static void main(String[] args) {
-        // Chooser 可以接受 T 的子类型
+        // Integer 是 Number 的子类型
         List<Integer> list = List.of(1, 3, 5, 7, 9);
         Chooser<Number> chooser = new Chooser<>(list);
         for (int i = 0; i < 5; i++) {

@@ -9,7 +9,7 @@ import java.util.Objects;
 // 递归参数类型  <E extends Comparable<E>> 表示与自身可以相互比较的元素类型 E
 // 求 List<String> 中最大值
 public class RecursiveTypeBound {
-    public static <E extends Comparable<E>> E max(Collection<E> c) {
+    public static <E extends Comparable<E>> E max(List<E> c) {
         if (c.isEmpty())
             throw new IllegalArgumentException("Empty Collection");
         
@@ -22,9 +22,8 @@ public class RecursiveTypeBound {
     }
 
     public static void main(String[] args) {
-        String[] s = {"123", "234", "456"};
-        List<String> ls = new ArrayList<>(Arrays.asList(s));
-        // "456"
+        List<String> ls = List.of("123", "234", "345");
+        // "345"
         System.out.println(max(ls));
     }
 }
