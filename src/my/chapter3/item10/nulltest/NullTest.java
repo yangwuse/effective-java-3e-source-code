@@ -1,3 +1,4 @@
+package my.chapter3.item10.nulltest;
 import java.util.Objects;
 
 // 比较可能为 null 的引用时 使用 Objects.equals()

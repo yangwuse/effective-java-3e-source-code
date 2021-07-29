@@ -1,8 +1,6 @@
 package my.chapter4.item20;
 
-import java.io.ObjectStreamConstants;
 import java.util.AbstractList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
@@ -35,6 +33,5 @@ public class StringArrays {
         List<String> list = stringArrayAsList(a);
         Collections.shuffle(list);
         System.out.println(list);
-        ObjectStreamConstants
     }
 }

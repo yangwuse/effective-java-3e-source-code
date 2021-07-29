@@ -4,13 +4,13 @@ import static effectivejava.chapter6.item34.PayrollDay.PayType.*;
 
 // The strategy enum pattern (Page 166)
 enum PayrollDay {
-    MONDAY(WEEKDAY), TUESDAY(WEEKDAY), WEDNESDAY(WEEKDAY),
-    THURSDAY(WEEKDAY), FRIDAY(WEEKDAY),
+    MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY,
     SATURDAY(WEEKEND), SUNDAY(WEEKEND);
 
     private final PayType payType;
 
     PayrollDay(PayType payType) { this.payType = payType; }
+    PayrollDay() { this(PayType.WEEKDAY); }
 
     int pay(int minutesWorked, int payRate) {
         return payType.pay(minutesWorked, payRate);

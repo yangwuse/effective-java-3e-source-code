@@ -1,8 +1,5 @@
 package my.chapter4.item23.hierarchy;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class Square extends Rectangle {
     public Square(double side) {
         super(side, side);
@@ -13,6 +10,5 @@ public class Square extends Rectangle {
         Square s = new Square(2.0);
         System.out.println(s.name);
         System.out.println(s.area());
-        HashMap
     }
 }
