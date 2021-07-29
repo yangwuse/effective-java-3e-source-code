@@ -1,7 +1,7 @@
 package my.chapter6.item34;
 
-// 用策略枚举替代 switch 和特定于常量的方法 减少样板代码 提高安全想
-// 本质思想是分类计算
+// 用策略枚举替代 switch 和特定于常量的方法 好处是减少样板代码 提高安全想
+// 本质思想是分类计算 类似于 helper 方法
 public enum PayrollDay {
     MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY,
     SATURDAY(DayType.WEEKEND), SUNDAY(DayType.WEEKDAY);
@@ -16,8 +16,9 @@ public enum PayrollDay {
         return dayType.pay(mins, payRate);
     }
 
-    // 策略枚举类型
+    // 策略枚举类型 效果等同于 helper 成员方法
     private enum DayType {
+        // 特定于常量的实现方法
         WEEKDAY {
             public double overtimePay(int minsWorked, double payRate) {
                 return minsWorked <= FIXED_WORKED_MINUTES ? 0 :

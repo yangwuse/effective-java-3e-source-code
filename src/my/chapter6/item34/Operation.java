@@ -21,13 +21,14 @@ public enum Operation {
 
     @Override public String toString() { return symbol; }
 
+    // 每个常量是实现自己特定的方法
     public abstract double apply(double x, double y);
 
     public static void main(String[] args) {
         double x = 4;
         double y = 2;
-        for (Operation op : Operation.values())
-            System.out.printf("%f %s %f = %f%n", 
+        for (Operation op : values())
+            System.out.printf("%.2f %s %.2f = %.2f%n", 
                 x, op, y, op.apply(x, y));
     }
 }

@@ -24,4 +24,5 @@ public enum BasicOperation implements Operation {
     @Override public String toString() {
         return symbol;
     }
+
 }

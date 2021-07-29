@@ -45,7 +45,7 @@ public enum Phase {
             for (Phase dst : Phase.values()) {
                 Transition transition = Transition.from(src, dst);
                 if (transition != null)
-                    System.out.printf("%s to %s : %s %n", src, dst, transition);
+                    System.out.printf("%-6s to %s : %s %n", src, dst, transition);
             }
         }
     }
